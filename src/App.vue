@@ -11,7 +11,7 @@ export default {
   },
   computed: {
     cityName() {
-      return "<" + this.city + ">"
+      return "`" + this.city + "`"
     },
     showTemp() {
       return "Температура: " + this.info.main.temp
@@ -69,7 +69,7 @@ export default {
 
 .wrapper {
   width: 900px;
-  height: 600px;
+  height: 500px;
   border-radius: 50px;
   background: #1f0f24;
   text-align: center;
@@ -77,8 +77,8 @@ export default {
 }
 
 .wrapper h1 {
-  margin-top: 150px;
-
+  padding-top: 50px;
+  margin-top: 250px;
 }
 
 .wrapper p {
